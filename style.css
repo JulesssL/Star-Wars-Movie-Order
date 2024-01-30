@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "GoodTiming";
+    src: url("resources/fonts/good_timing/good\ timing\ bd.otf");
+    src: url("resources/fonts/good_timing/good\ timing\ bd.otf") format("otf"),
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("resources/fonts/montserrat/Montserrat-Regular.ttf");
+    src: url("resources/fonts/montserrat/Montserrat-Regular.ttf") format("ttf"),
+}
+
+@font-face {
+    font-family: "MontserratLight";
+    src: url("resources/fonts/montserrat/Montserrat-Light.ttf");
+    src: url("resources/fonts/montserrat/Montserrat-Light.ttf") format("ttf"),
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: #fff38a
+}
+
+body {
+    background-color: #060447;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+    height:85vh;
+}
+
+.posterImage{
+    max-height: 65vh;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s ease-in-out;
+}
+
+.contentText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 65vh;
+}
+
+.imgLogoTopLeft{
+    transition: .5 ease-in-out;
+}
+
+.movieTitle{
+    font-size: 36px;
+    transition: .3s ease-in-out;
+    transition-delay: .15s;
+}
+
+.movieText{
+    font-size: 16px;
+    font-family: 'MontserratLight';
+    transition: .3s ease-in-out;
+    transition-delay: .3s;
+    margin-right: 5%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
+.date {
+    font-family: 'GoodTiming';
+    font-size: 150px;
+    transition: .5s ease-in-out;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.Allpoints {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+[class^="point"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #e6d00a62;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #fff38a;
+}
+
+.arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.arrowLeft{
+    cursor: pointer;
+}
+
+.arrowRight{
+    cursor: pointer;
+}
